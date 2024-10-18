@@ -52,4 +52,29 @@
   transform: rotate(180deg);
   padding-bottom: 50%;
   padding-top: 50%;
+  position: relative;
+}
+
+.navbar li a {
+  color: #a5a4a4;
+  text-decoration: none;
+}
+
+.navbar-center li a::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  top: 0;
+  left: -20%;
+  width: 10%;
+  background: coral;
+  transition: height 0.2s ease;
+}
+
+.navbar-center li a:hover::after {
+  height: 100%;
+}
+
+.navbar-center li a.active::after {
+  height: 100%;
 }
