@@ -2,7 +2,6 @@ import React from "react";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 
 function Header() {
