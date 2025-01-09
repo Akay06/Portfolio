@@ -47,7 +47,7 @@ const Intro = () => {
               onInit={(typewriter) => {
                 typewriter
                   .pauseFor(2500)
-                  .changeDelay(50)
+                  .changeDelay(25)
                   .callFunction(() => {
                     document.querySelector(
                       ".Typewriter__cursor3"
@@ -71,8 +71,8 @@ const Intro = () => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .pauseFor(19000)
-                  .changeDelay(50)
+                  .pauseFor(13000)
+                  .changeDelay(25)
                   .callFunction(() => {
                     document.querySelector(
                       ".Typewriter__cursor2"

@@ -1,3 +1,73 @@
 #contact-section {
   height: 100vh;
+  font-size: 5vh;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 60vh;
+  margin-top: 4%;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+form label {
+  font-weight: bold; /* Optional: Emphasize the label text */
+}
+
+#email,
+#message {
+  width: 100%;
+  margin-top: 3rem;
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#email {
+  padding-bottom: 3%;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+input,
+textarea {
+  color: #fff;
+}
+
+#submit-button {
+  color: #fff;
+  margin-top: 10%;
+  padding: 2% 1%;
+  padding-right: 2%;
+  display: inline-block;
+  animation: none;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 2.5vh;
+  letter-spacing: 0.5vh;
+  cursor: pointer;
+  width: fit-content;
+  background-color: coral;
+  transition: ease-in-out 0.2s;
+}
+
+#submit-button:hover {
+  scale: 1.1;
 }
