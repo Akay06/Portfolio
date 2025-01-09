@@ -1,20 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Typewriter from "typewriter-effect";
 import "./Intro.css";
 import profileImage from "../IMG_3644.jpg";
+import IntersectionAnimationTrigger from "./IntersectionAnimationTrigger";
 
 const Intro = () => {
+  const [animated, setAnimated] = useState(false);
+
+  const handleInView = () => {
+    setAnimated(true);
+  };
+
   return (
-    <>
-      <section id="intro-section">
-        <div className="intro typewriter">
-          <p>
+    <IntersectionAnimationTrigger onInView={handleInView}>
+      <section
+        id="intro-section"
+        className={`animated-element ${animated ? "animate" : ""}`}
+      >
+        {animated && (
+          <div className="intro">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
+                  .callFunction(() => {
+                    document.querySelector(
+                      ".Typewriter__cursor1"
+                    ).style.display = "initial";
+                  })
                   .typeString("Hi there,")
                   .callFunction(() => {
                     document.querySelector(
@@ -23,10 +38,11 @@ const Intro = () => {
                   })
                   .start();
               }}
-              options={{ cursorClassName: "Typewriter__cursor1" }}
+              options={{
+                cursorClassName: "Typewriter__cursor1",
+                cursor: "&#9898",
+              }}
             />
-          </p>
-          <p>
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -47,10 +63,11 @@ const Intro = () => {
                   })
                   .start();
               }}
-              options={{ cursorClassName: "Typewriter__cursor3" }}
+              options={{
+                cursorClassName: "Typewriter__cursor3",
+                cursor: "&#9898",
+              }}
             />
-          </p>
-          <p>
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -76,20 +93,23 @@ const Intro = () => {
                   })
                   .start();
               }}
-              options={{ cursorClassName: "Typewriter__cursor2" }}
+              options={{
+                cursorClassName: "Typewriter__cursor2",
+                cursor: "&#9898",
+              }}
             />
-          </p>
 
-          <Link
-            className="msg-button"
-            to="contact-section"
-            smooth={true}
-            duration={500}
-          >
-            <FontAwesomeIcon icon={faPaperPlane} />
-            &nbsp;Send me a message
-          </Link>
-        </div>
+            <Link
+              className="msg-button"
+              to="contact-section"
+              smooth={true}
+              duration={500}
+            >
+              <FontAwesomeIcon icon={faPaperPlane} />
+              &nbsp;Send me a message
+            </Link>
+          </div>
+        )}
         <div className="profile-image">
           <img
             src={profileImage}
@@ -99,7 +119,7 @@ const Intro = () => {
           />
         </div>
       </section>
-    </>
+    </IntersectionAnimationTrigger>
   );
 };
 
