@@ -1,3 +1,20 @@
 #projects-section {
   height: 100vh;
 }
+
+.projects-container {
+  margin-left: 20%;
+  margin-right: 10%;
+  padding-top: 10%;
+}
+
+.projects-item {
+  width: 75%;
+  height: 40rem;
+  background-color: rgb(187, 187, 187);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
