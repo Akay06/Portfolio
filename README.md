@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio Website
 
-A **modern**, **responsive**, and **interactive** portfolio website showcasing my skills, projects, and experience. Built with **modern web technologies** for a seamless and engaging user experience..
+A **modern**, **responsive**, and **interactive** portfolio website showcasing my skills, projects, and experience. Built with **modern web technologies** for a seamless and engaging user experience.
 
 ---
 
