@@ -70,7 +70,10 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className="projects-button">
-                  <button>View project</button>
+                  <button>
+                    View project&nbsp;
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </button>
                 </div>
               </div>
             </div>
