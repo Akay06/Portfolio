@@ -56,16 +56,18 @@
 .projects-content .projects-button {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   grid-row: 2/4;
   grid-column: 3;
+  text-wrap: nowrap;
+  padding-bottom: 10%;
 }
 
 .projects-button button {
   color: black;
-  padding: 2% 1%;
-  padding-right: 2%;
+  padding: 4% 3%;
+  width: 100%;
   background-color: white;
   display: inline-block;
   animation: none;
@@ -79,6 +81,11 @@
 
 .projects-button button:hover {
   box-shadow: inset 30rem 0 0 0 rgb(255, 127, 80);
+}
+
+.projects-button a {
+  padding: 3% 0%;
+  width: 95%;
 }
 
 .slick-prev,

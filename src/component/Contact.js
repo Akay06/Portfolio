@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -43,40 +44,42 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact-section">
-      <div className="contact-container">
-        <form onSubmit={handleSubmit}>
-          <p>Say hello</p>
-          <hr
-            style={{
-              width: "100%",
-              border: "2px solid coral",
-            }}
-          />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            placeholder="Your email"
-          />
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            placeholder="Your message here"
-          ></textarea>
-          <button id="submit-button" type="submit">
-            <FontAwesomeIcon icon={faPaperPlane} />
-            &nbsp;Send message
-          </button>
-        </form>
-      </div>
-    </section>
+    <Fade>
+      <section id="contact-section">
+        <div className="contact-container">
+          <form onSubmit={handleSubmit}>
+            <p>Say hello</p>
+            <hr
+              style={{
+                width: "100%",
+                border: "2px solid coral",
+              }}
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              placeholder="Your email"
+            />
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              placeholder="Your message here"
+            ></textarea>
+            <button id="submit-button" type="submit">
+              <FontAwesomeIcon icon={faPaperPlane} />
+              &nbsp;Send message
+            </button>
+          </form>
+        </div>
+      </section>
+    </Fade>
   );
 };
 
