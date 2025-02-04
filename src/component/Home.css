@@ -1,0 +1,61 @@
+#main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.main-container h1 {
+  font-size: 4vh;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: left;
+  color: #414141;
+  padding-bottom: 4%;
+  letter-spacing: 1vw;
+}
+
+.main-container h2 {
+  font-size: 10vh;
+  margin: 0;
+  text-align: left;
+  position: relative;
+}
+
+.main-container h3 {
+  font-size: 10vh;
+  margin: 0;
+  text-align: left;
+}
+
+.fade-out {
+  animation: shine linear 8s infinite;
+  -webkit-animation: shine linear 8s infinite;
+  -moz-animation: shine linear 8s infinite;
+  -o-animation: shine linear 8s infinite;
+  -ms-animation: shine linear 8s infinite;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  background-size: 100vw;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100vw;
+  }
+}
+
+.main-container h3 span {
+  color: #414141;
+}
