@@ -1,5 +1,5 @@
 #contact-section {
-  height: 90vh;
+  min-height: 90vh;
   font-size: 5vh;
 }
 
@@ -43,8 +43,9 @@ form label {
   padding-bottom: 3%;
 }
 
-p {
+.contact-container p {
   margin-bottom: 0;
+  text-wrap-mode: nowrap;
 }
 
 input,
@@ -80,4 +81,10 @@ input:-webkit-autofill:active {
 
 #submit-button:hover {
   scale: 1.1;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-container form {
+    width: 80%;
+  }
 }

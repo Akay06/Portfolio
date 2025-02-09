@@ -1,3 +1,10 @@
 span {
   padding-bottom: 2%;
+  font-size: 01em;
+}
+
+@media screen and (max-width: 1024px) {
+  span {
+    font-size: 0.75em;
+  }
 }

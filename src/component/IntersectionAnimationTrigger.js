@@ -11,7 +11,7 @@ const IntersectionAnimationTrigger = ({ children, onInView }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.5,
+      threshold: 0.2,
     });
 
     // Start observing the target element
