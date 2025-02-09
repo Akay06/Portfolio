@@ -1,6 +1,6 @@
 #contact-section {
-  min-height: 90vh;
   font-size: 5vh;
+  min-height: 95vh;
 }
 
 .contact-container {
@@ -8,10 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 60vh;
-  margin-top: 4%;
+  margin: 10%;
 }
 
 .contact-container form {
@@ -77,6 +74,7 @@ input:-webkit-autofill:active {
   width: fit-content;
   background-color: coral;
   transition: ease-in-out 0.2s;
+  text-wrap: nowrap;
 }
 
 #submit-button:hover {
