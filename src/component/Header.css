@@ -5,16 +5,14 @@
   flex-direction: column;
   position: fixed;
   height: 100%;
-  width: 10%;
+  width: 20%;
   z-index: 1000;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-top {
-  display: flex;
-  flex-direction: column;
   color: #a5a4a4;
-  align-items: center;
-  justify-content: space-between;
   font-family: "knewave";
   font-size: 250%;
   padding-top: 10%;
@@ -30,6 +28,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 125%;
   flex: 1 1 auto;
+  align-items: center;
 }
 
 .navbar ul {
@@ -49,8 +48,8 @@
 .navbar-center li {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  padding-bottom: 50%;
-  padding-top: 50%;
+  padding-bottom: 15px;
+  padding-top: 15px;
   position: relative;
   cursor: pointer;
 }
@@ -81,4 +80,25 @@
 
 .navbar-center li a.active::after {
   height: 100%;
+}
+
+@media screen and (max-height: 720px) {
+  .navbar-center {
+    margin-right: 100%;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .navbar-container {
+    font-size: small;
+  }
+
+  .navbar-center {
+    font-size: small;
+  }
+
+  .navbar-center li {
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
 }
