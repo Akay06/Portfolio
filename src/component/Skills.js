@@ -10,16 +10,32 @@ const Skills = () => {
       <Fade>
         <section id="skills-section">
           <div className="skill-container">
-            <FontAwesomeIcon
-              icon={faHtml5}
-              style={{ color: "#FFD43B", fontSize: "5em" }}
-              title="HTML5"
-            />
-            <FontAwesomeIcon
-              icon={faCss3}
-              style={{ color: "#74C0FC", fontSize: "5em" }}
-              title="CSS3"
-            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="5em"
+              height="5em"
+              viewBox="0 0 384 512"
+            >
+              <path
+                fill="#FFD43B"
+                d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="5em"
+              height="5em"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="#74C0FC"
+                d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"
+              />
+            </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"

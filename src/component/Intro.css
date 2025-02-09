@@ -1,7 +1,7 @@
 #intro-section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  margin-left: 20%;
+  margin-left: 10%;
   margin-right: 10%;
   justify-content: center;
   align-items: flex-start;
@@ -47,7 +47,7 @@
   animation: none;
   opacity: 0;
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 2.5vh;
+  font-size: 1.2rem;
   letter-spacing: 0.5vh;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 rgb(255, 127, 80);
@@ -83,4 +83,16 @@
 .animated-element.animate {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media screen and (max-width: 1024px) {
+  #intro-section {
+    flex-direction: column-reverse;
+    margin-bottom: 10%;
+  }
+
+  .msg-button {
+    font-size: 1rem;
+    box-shadow: inset 30rem 0 0 0 rgb(255, 127, 80);
+  }
 }

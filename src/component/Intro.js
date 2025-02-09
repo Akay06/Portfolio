@@ -16,8 +16,8 @@ const Intro = () => {
   };
 
   return (
-    <Fade>
-      <IntersectionAnimationTrigger onInView={handleInView}>
+    <IntersectionAnimationTrigger onInView={handleInView}>
+      <Fade>
         <section
           id="intro-section"
           className={`animated-element ${animated ? "animate" : ""}`}
@@ -121,8 +121,8 @@ const Intro = () => {
             />
           </div>
         </section>
-      </IntersectionAnimationTrigger>
-    </Fade>
+      </Fade>
+    </IntersectionAnimationTrigger>
   );
 };
 
