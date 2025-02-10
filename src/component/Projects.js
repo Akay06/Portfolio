@@ -75,12 +75,12 @@ const Projects = () => {
                   </div>
                   <div className="projects-button">
                     <a
-                      href="https://akay06.github.io/ShopSwift-Frontend"
+                      href="https://shopswift.akay06.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <button>
-                        Visit Shopswift&nbsp;
+                        View Project&nbsp;
                         <FontAwesomeIcon icon={faArrowRight} />
                       </button>
                     </a>
@@ -90,7 +90,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       <button>
-                        View project&nbsp;
+                        Source Code&nbsp;
                         <FontAwesomeIcon icon={faArrowRight} />
                       </button>
                     </a>
@@ -118,12 +118,22 @@ const Projects = () => {
                   </div>
                   <div className="projects-button">
                     <a
+                      href="https://summarizer.akay06.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button>
+                        View Project&nbsp;
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </button>
+                    </a>
+                    <a
                       href="https://github.com/Akay06/Text-Summeriser"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <button>
-                        View project&nbsp;
+                        Source Code&nbsp;
                         <FontAwesomeIcon icon={faArrowRight} />
                       </button>
                     </a>
@@ -150,12 +160,22 @@ const Projects = () => {
                   </div>
                   <div className="projects-button">
                     <a
+                      href="https://classifier.akay06.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button>
+                        View Project&nbsp;
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </button>
+                    </a>
+                    <a
                       href="https://github.com/Akay06/Fruit-Vegetable-Health-Classifier"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <button>
-                        View project&nbsp;
+                        Source Code&nbsp;
                         <FontAwesomeIcon icon={faArrowRight} />
                       </button>
                     </a>
@@ -187,7 +207,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       <button>
-                        View project&nbsp;
+                        Source Code&nbsp;
                         <FontAwesomeIcon icon={faArrowRight} />
                       </button>
                     </a>
