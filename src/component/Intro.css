@@ -11,7 +11,7 @@
 .intro {
   flex: 1.3;
   text-align: left;
-  color: #a5a4a4;
+  color: light-dark(#616161, #a5a4a4);
   font-size: 3vh;
   line-height: 5vh;
   font-weight: 600;
@@ -33,13 +33,13 @@
 
 .intro > :first-child {
   font-size: 4vh;
-  color: white;
+  color: light-dark(black, white);
   font-weight: 800;
   padding-top: 15%;
 }
 
 .msg-button {
-  color: #fff;
+  color: light-dark(black, #fff);
   margin-top: 10%;
   padding: 2% 1%;
   padding-right: 2%;

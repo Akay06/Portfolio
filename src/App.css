@@ -1,3 +1,17 @@
 .App {
   text-align: center;
 }
+
+.App .lightdark {
+  color: light-dark(#ffd43b, #fff);
+  position: fixed;
+  top: 4%;
+  right: 2%;
+  cursor: pointer;
+  transition: font-size 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+.lightdark:hover {
+  font-size: 2.25em;
+}
