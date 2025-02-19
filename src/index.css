@@ -11,6 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: light-dark(white, black);
   color: light-dark(black, white);
+  transition: background-color 1s ease;
 }
 
 code {

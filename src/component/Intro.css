@@ -39,7 +39,7 @@
 }
 
 .msg-button {
-  color: #fff;
+  color: light-dark(black, #fff);
   margin-top: 10%;
   padding: 2% 1%;
   padding-right: 2%;

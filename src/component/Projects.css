@@ -8,6 +8,12 @@
   padding-top: 7%;
 }
 
+.projects-slider {
+  border: 2px solid;
+  border-color: light-dark(black, black);
+  border-radius: 2vh;
+}
+
 .projects-item {
   height: 70vh;
   background-image: url("../AdobeStock_369513291.jpeg");
