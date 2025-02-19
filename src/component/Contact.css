@@ -31,7 +31,7 @@ form label {
   font-size: 1rem;
   border: none;
   background: transparent;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid light-dark(black, #fff);
   outline: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -47,7 +47,7 @@ form label {
 
 input,
 textarea {
-  color: #fff;
+  color: light-dark(black, #fff);
 }
 
 input:-webkit-autofill,

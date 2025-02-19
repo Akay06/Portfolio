@@ -59,7 +59,7 @@
 }
 
 .navbar li a {
-  color: #a5a4a4;
+  color: light-dark(#616161, #a5a4a4);
   text-decoration: none;
 }
 
@@ -82,7 +82,7 @@
   height: 100%;
 }
 
-@media screen and (max-height: 720px) {
+@media screen and (max-width: 720px) {
   .navbar-center {
     margin-right: 100%;
   }
