@@ -17,6 +17,19 @@
   padding: 2%;
 }
 
+.skill-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  transition: 0.2s ease-in-out;
+}
+
+.skill-container div:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 1024px) {
   .skill-container svg {
     font-size: small;
