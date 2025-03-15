@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
 
@@ -43,6 +44,11 @@ function Header() {
         </div>
         <div className="navbar-bottom">
           <ul>
+            <li>
+              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFile} size="xl" />
+              </a>
+            </li>
             <li>
               <a
                 href={process.env.REACT_APP_GITHUB_URL || "https://github.com"}
