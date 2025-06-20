@@ -160,16 +160,6 @@ const Projects = () => {
                   </div>
                   <div className="projects-button">
                     <a
-                      href="https://classifier.akay06.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <button>
-                        View Project&nbsp;
-                        <FontAwesomeIcon icon={faArrowRight} />
-                      </button>
-                    </a>
-                    <a
                       href="https://github.com/Akay06/Fruit-Vegetable-Health-Classifier"
                       target="_blank"
                       rel="noopener noreferrer"
