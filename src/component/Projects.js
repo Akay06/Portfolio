@@ -74,7 +74,7 @@ const Projects = () => {
                     </p>
                   </div>
                   <div className="projects-button">
-                    <a
+                    /*<a
                       href="https://shopswift.akay06.com/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -83,7 +83,7 @@ const Projects = () => {
                         View Project&nbsp;
                         <FontAwesomeIcon icon={faArrowRight} />
                       </button>
-                    </a>
+                    </a>*/
                     <a
                       href="https://github.com/Akay06/ShopSwift-Frontend"
                       target="_blank"
