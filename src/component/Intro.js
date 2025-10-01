@@ -52,36 +52,14 @@ const Intro = () => {
                     .changeDelay(25)
                     .callFunction(() => {
                       document.querySelector(
-                        ".Typewriter__cursor3"
+                        ".Typewriter__cursor2"
                       ).style.display = "initial";
                     })
                     .typeString(
                       "I'm Kannappan, a Master's student in Computer Science at The University of Texas at Arlington. With experience in backend development, cloud computing, and retail tech, I specialize in building scalable systems and deploying RESTful APIs to improve operational efficiency."
                     )
-                    .callFunction(() => {
-                      document.querySelector(
-                        ".Typewriter__cursor3"
-                      ).style.display = "none";
-                    })
-                    .start();
-                }}
-                options={{
-                  cursorClassName: "Typewriter__cursor3",
-                  cursor: "&#9898",
-                }}
-              />
-              <Typewriter
-                onInit={(typewriter) => {
-                  typewriter
-                    .pauseFor(13000)
-                    .changeDelay(25)
-                    .callFunction(() => {
-                      document.querySelector(
-                        ".Typewriter__cursor2"
-                      ).style.display = "initial";
-                    })
                     .typeString(
-                      "I enjoy reading short stories and comics, and playing video games in my spare time."
+                      "<p>I enjoy reading short stories and comics, and playing video games in my spare time.</p>"
                     )
                     .callFunction(() => {
                       document.querySelector(

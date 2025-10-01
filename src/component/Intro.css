@@ -59,8 +59,7 @@
 }
 
 .Typewriter__cursor1,
-.Typewriter__cursor2,
-.Typewriter__cursor3 {
+.Typewriter__cursor2 {
   display: none;
   color: #fff;
 }
