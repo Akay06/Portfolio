@@ -58,7 +58,7 @@ function Header() {
                 <FontAwesomeIcon icon={faGithub} size="xl" />
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href={
                   process.env.REACT_APP_LINKEDIN_URL ||
@@ -69,7 +69,7 @@ function Header() {
               >
                 <FontAwesomeIcon icon={faLinkedin} size="xl" />
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
