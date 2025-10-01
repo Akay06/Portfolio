@@ -45,7 +45,11 @@ function Header() {
         <div className="navbar-bottom">
           <ul>
             <li>
-              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a
+                href={`https://drive.google.com/file/d/1a54Qp0b9_dtHqiI-68pgvLhqnFwaDp3o/view?usp=sharing&t=${new Date().getTime()}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faFile} size="xl" />
               </a>
             </li>

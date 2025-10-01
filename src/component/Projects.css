@@ -85,7 +85,7 @@
 }
 
 .projects-button button:hover {
-  box-shadow: inset 30rem 0 0 0 rgb(255, 127, 80);
+  box-shadow: inset 50rem 0 0 0 rgb(255, 127, 80);
 }
 
 .projects-button a {
